@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #f3fbff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.img-box{
+    width: 60%;
+    /* rest 20 % left and right gap */
+    margin: auto;
+    /* remove extra space from bottom */
+    line-height: 0;
+    /* add bg to img  */
+    background-image: url(/background_change_img/background.png);
+    overflow: hidden;
+    position: relative;
+}
+
+.img-wrap{
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* add in parent div pos relativ */
+    overflow: hidden;
+    width: 20px;
+}
+
+span{
+    width: 1px;
+    height: 100%;
+    cursor: ew-resize;
+    background: #fff;
+    position: absolute;
+    left: 20px;
+    top: 0;
+
+}
+.arrow{
+    width: 45px;
+    position: absolute;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+
+}
